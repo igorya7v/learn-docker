@@ -1,0 +1,7 @@
+FROM openjdk:8
+
+EXPOSE 8080
+
+ADD target/simple-spring-boot.jar simple-spring-boot.jar
+
+ENTRYPOINT ["java", "-jar", "simple-spring-boot.jar"]
