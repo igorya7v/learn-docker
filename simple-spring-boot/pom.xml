@@ -45,12 +45,6 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<requiresUnpack>
-						<dependency>
-							<groupId>com.telus</groupId>
-							<artifactId>paas-springboot-security</artifactId>
-						</dependency>
-					</requiresUnpack>
 				</configuration>
 			</plugin>
 			<plugin>
