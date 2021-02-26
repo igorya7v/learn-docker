@@ -62,8 +62,8 @@ jobs:
       working-directory: ./simple-spring-boot
       id: build-image
       env:
-        # ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REGISTRY: public.ecr.aws/m6w2u8m1/igorya5v/simple-springboot-repo
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        # ECR_REGISTRY: public.ecr.aws/m6w2u8m1/igorya5v/simple-springboot-repo
         ECR_REPOSITORY: simple-springboot-repo
         IMAGE_TAG: ${{ github.sha }}
       run: |
