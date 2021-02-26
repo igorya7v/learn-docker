@@ -2,7 +2,7 @@ FROM openjdk:8
 
 EXPOSE 8080
 
-ADD target/simple-spring-boot.jar simple-spring-boot.jar
+ADD ./simple-spring-boot/target/simple-spring-boot.jar simple-spring-boot.jar
 
 # Use the CMD when you want the user of the image to have the flexibility 
 # to run any executable they want to start the container.

@@ -33,8 +33,6 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./simple-spring-boot
 
     steps:
     - name: Checkout
@@ -52,7 +50,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Build, tag, and push image to Amazon ECR
-      working-directory: ${{env.working-directory}}
+      working-directory: ./simple-spring-boot
       id: build-image
       env:
         # ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
