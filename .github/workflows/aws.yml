@@ -64,11 +64,10 @@ jobs:
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
     - name: Fill in the new image ID in the Amazon ECS task definition
-      working-directory: ./simple-spring-boot
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: ecs-task-definition.json
+        task-definition: ./simple-spring-boot/ecs-task-definition.json
         container-name: simple-springboot-app
         image: ${{ steps.build-image.outputs.image }}
 
