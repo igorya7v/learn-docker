@@ -1,0 +1,23 @@
+{
+    "family": "SimpleSpringBootTask", 
+    "networkMode": "awsvpc", 
+    "containerDefinitions": [
+        {
+            "name": "simple-springboot-app", 
+            "image": "ubuntu", 
+            "portMappings": [
+                {
+                    "containerPort": 8080, 
+                    "hostPort": 8080, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "1024"
+}
