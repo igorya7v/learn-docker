@@ -1,6 +1,7 @@
 {
     "family": "SimpleSpringBootTask", 
-    "networkMode": "awsvpc", 
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::665524042598:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
             "name": "simple-springboot-app", 
