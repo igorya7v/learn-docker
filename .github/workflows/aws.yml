@@ -90,5 +90,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: SimpleSpringAppService
-        cluster: SimpleSpringBootClusterUpdate
+        cluster: SimpleSpringBootCluster
         wait-for-service-stability: true
