@@ -9,7 +9,7 @@ The Deployment Pipeline is defined in the ".github/workflows/aws.yml" file.
 
 # Deploy Pipeline Flowchart (.github/workflows/aws.yml)
 
-
+![Deployment With Kubernetes Diagram](https://github.com/igorya7v/learn-docker/blob/main/deploy-flow-chart.png)
   
 
 # AWS Elastic Container Service (ECS) Fargate Setup
